@@ -10,10 +10,15 @@ def blink():
 	while True:
                 if GPIO.input(27):
                         GPIO.output(17, True)
+                        
+                        
 		else:
+                        print ("pressed")
                         GPIO.output(17, False)
+                
 		
+        
 	GPIO.cleanup()
-
+        
 
 blink()
